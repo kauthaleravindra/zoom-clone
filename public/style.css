@@ -1,131 +1,132 @@
-.main{
-    display: flex;
-    height: 100vh;
+.main {
+  display: flex;
+  height: 100vh;
 }
 
 #video-grid {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 0.9;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0.9;
+  justify-content: center;
 }
-video{
-    width: 300px;
-    height: 400px;
-    object-fit: contain;
-    padding: 8px;
-}
-
-.main__left{
-    display:flex;
-    flex: 0.8;
-    flex-direction: column;
-    background-color: black;
-} 
-
-.left__control{
-    display: flex;
-    flex-direction: row;
-    background-image: linear-gradient(180deg,#26282a,#1c1e20);;
-    color: white;
-    flex:0.1;
-    justify-content: space-between;
+video {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  padding: 8px;
+  transform: rotateY(180deg);
 }
 
-.left__control__block{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+.main__left {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+  background-color: black;
 }
 
-.left__control__button{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 10px;
-    justify-content: center;
-    align-items: center;
-    min-width: 80px;
-    cursor: pointer;
+.left__control {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(180deg, #26282a, #1c1e20);
+  color: white;
+  flex: 0.1;
+  justify-content: space-between;
 }
 
-.left__control__button:hover{
-    background-color: #343434;
-    border-radius: 5px;
+.left__control__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.left__control__button > i{
-    font-size: 24px;
+.left__control__button {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  cursor: pointer;
 }
 
-.control__leaveMeeting{
-    border: 1px solid gray;
-    border-radius: 5px;
-    color:#EB534B;
-    padding: 5px;
+.left__control__button:hover {
+  background-color: #343434;
+  border-radius: 5px;
 }
 
-.main__right{
-    display: flex;
-    flex: 0.2;
-    flex-direction: column;
-    background-color: #242324;
-    border-left: 1px solid #3D3D42;
+.left__control__button > i {
+  font-size: 24px;
 }
 
-.right__header{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    padding: 10px;
+.control__leaveMeeting {
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: #eb534b;
+  padding: 5px;
 }
 
-.right__messages{
-    display: flex;
-    flex-grow: 1;
-    overflow-y: auto;
+.main__right {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+  background-color: #242324;
+  border-left: 1px solid #3d3d42;
 }
 
-.main__chat__input{
-    display: flex;
-    padding: 20px;
+.right__header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding: 10px;
 }
 
-.main__chat__input> input{
-    flex-grow: 1;
-    background-color: transparent;
-    border: none;
-    color: #f5f5f5;
+.right__messages {
+  display: flex;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
-.unmute{
-    color: #cc3b33;
+.main__chat__input {
+  display: flex;
+  padding: 20px;
 }
 
-.stop{
-    color:#cc3b33 ;
+.main__chat__input > input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
 }
 
-.message{
-    color:white
+.unmute {
+  color: #cc3b33;
+}
+
+.stop {
+  color: #cc3b33;
+}
+
+.message {
+  color: white;
 }
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
